@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #08090c;
+  --color-surface: #101217;
+  --color-surface-2: #191c24;
+  --color-fg: #f0f3f6;
+  --color-muted: #8c96a5;
+  --color-faint: #525a6b;
+  --color-border: #232732;
+  --color-accent: #c9d1d8;
+  --color-accent-fg: #08090c;
+
+  --font-sans: "Figtree", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --tracking-kicker: 0.16em;
+
+  --shadow-hairline: 0 0 0 1px rgba(255, 255, 255, 0.08), 0 8px 30px -4px rgba(0, 0, 0, 0.5);
+  --shadow-hairline-strong: 0 0 0 1px rgba(255, 255, 255, 0.22), 0 12px 36px -4px rgba(0, 0, 0, 0.7);
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+@utility tracking-kicker {
+  letter-spacing: 0.16em;
+}
+
+@layer utilities {
+  .font-display {
+    font-optical-sizing: auto;
+  }
+}

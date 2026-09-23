@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Production / build outputs
+.vercel/
+dist/
+.output/
+.tanstack/
+
+# Screenshots and test artifacts
+screenshots/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
